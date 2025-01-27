@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12bweboldal</title>
+    <title>12b weboldal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Színes háttér */
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5em;
+            text-align: center;
+            max-width: 600px;
+            animation: textAnimation 3s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+            50% {
+                background: linear-gradient(to right, #6a11cb, #2575fc);
+            }
+            100% {
+                background: linear-gradient(to right, #ff6a00, #ee0979);
+            }
+        }
+
+        @keyframes textAnimation {
+            0% {
+                color: white;
+            }
+            100% {
+                color: #ffeb3b;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>12b masodik weboldala</h1>
-    Első a Google Sites volt
+    <h1>12b második weboldala</h1>
+    <p>Első a Google Sites volt. Most pedig egy színes és illatos (szimbolikus) weboldalt hoztunk létre!</p>
 </body>
 </html>
